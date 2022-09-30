@@ -4,6 +4,7 @@ from django.template import Library
 register = Library()
 
 
+
 @register.filter('odd_only')
 def find_odd_numbers(numbers):
     return [num for num in numbers if num % 2 != 0]
